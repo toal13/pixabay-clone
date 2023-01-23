@@ -18,7 +18,8 @@ const handleSubmit = (e) => {
     return res.json();
    })
    .then((data) => {
-    setFetchData(data)
+    console.log(data.hits);
+    setFetchData(data.hits);
    });
 
 }
